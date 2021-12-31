@@ -30,7 +30,7 @@ def create(name, ussr, usa, bid, test):
         gamefile.write(f"USA: {usa}\n")
         gamefile.write(f"Bid: {bid}\n")
         gamefile.write("-" * 80 + "\n")
-    console.print(f":sparkles: [bold yellow]{name}[/] created in {path} :sparkles:")
+    console.print(f"✨ [bold yellow]{name}[/] created in {path} ✨")
 
 
 if __name__ == "__main__":
