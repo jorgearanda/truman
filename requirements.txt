@@ -1,0 +1,6 @@
+black
+click
+coverage
+pytest
+pytest-watch
+rich

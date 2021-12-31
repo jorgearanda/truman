@@ -1,0 +1,4 @@
+__pycache__/
+games/
+test_output/
+.coverage
