@@ -18,6 +18,9 @@ class Cards:
                 card = Card(line)
                 self.cards[card.short] = card
 
+    def move(self, short, dest):
+        self.cards[short].location = dest
+
 
 # -- Tests --
 def test_card():
@@ -34,3 +37,9 @@ def test_cards():
     cards = Cards()
     assert len(cards.cards) == 110
     assert cards.cards["ussuri"].type == "usa"
+
+
+def test_card_move():
+    cards = Cards()
+    cards.move("nasser", "ussr")
+    assert cards.cards["nasser"].location == "ussr"
