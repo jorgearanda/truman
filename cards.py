@@ -21,6 +21,13 @@ class Cards:
     def move(self, short, dest):
         self.cards[short].location = dest
 
+    def cards_in(self, location):
+        return {
+            card.short: card
+            for card in self.cards.values()
+            if card.location == location
+        }
+
 
 # -- Tests --
 def test_card():
@@ -43,3 +50,11 @@ def test_card_move():
     cards = Cards()
     cards.move("nasser", "ussr")
     assert cards.cards["nasser"].location == "ussr"
+
+
+def test_cards_in():
+    cards = Cards()
+    assert len(cards.cards_in("box")) == 110
+    cards.move("nasser", "ussr")
+    assert len(cards.cards_in("box")) == 109
+    assert len(cards.cards_in("ussr")) == 1
