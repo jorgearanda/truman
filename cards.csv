@@ -1,9 +1,8 @@
-short,full,stage,type,on_event,ops
 assco,Asia Scoring,early,scoring,discard,0
 eusco,Europe Scoring,early,scoring,discard,0
 mesco,Middle East Scoring,early,scoring,discard,0
-duck,Duck and Cover,early,us,discard,3
-fyp,Five Year Plan,early,us,discard,3
+duck,Duck and Cover,early,usa,discard,3
+fyp,Five Year Plan,early,usa,discard,3
 china,The China Card,special,neutral,pass,4
 sogov,Socialist Governments,early,ussr,discard,3
 fidel,Fidel,early,ussr,remove,2
@@ -17,40 +16,40 @@ nasser,Nasser,early,ussr,remove,1
 warsaw,Warsaw Pact Formed,early,ussr,remove,3
 gaulle,De Gaulle Leads France,early,ussr,remove,3
 nazi,Captured Nazi Scientist,early,neutral,remove,1
-truman,Truman Doctrine,early,us,remove,1
+truman,Truman Doctrine,early,usa,remove,1
 olym,Olympic Games,early,neutral,discard,2
-nato,NATO,early,us,remove,4
-ireds,Independent Reds,early,us,remove,2
-marshall,Marshall Plan,early,us,remove,4
+nato,NATO,early,usa,remove,4
+ireds,Independent Reds,early,usa,remove,2
+marshall,Marshall Plan,early,usa,remove,4
 ipwar,Indo-Pakistani War,early,neutral,discard,2
-contain,Containment,early,us,remove,3
-cia,CIA Created,early,us,remove,1
-japan,US/Japan Mutual Defense Pact,early,us,remove,4
+contain,Containment,early,usa,remove,3
+cia,CIA Created,early,usa,remove,1
+japan,US/Japan Mutual Defense Pact,early,usa,remove,4
 suez,Suez Crisis,early,ussr,remove,3
-eeu,East European Unrest,early,us,discard,3
+eeu,East European Unrest,early,usa,discard,3
 decol,Decolonization,early,ussr,discard,2
 redsp,Red Scare/Purge,early,neutral,discard,4
 un,UN Intervention,early,neutral,discard,1
 destal,De-Stalinization,early,ussr,remove,3
 ntb,Nuclear Test Ban,early,neutral,discard,4
-fores,Formosan Resolution,early,us,remove,2
-defect,Defectors,early,us,discard,2
+fores,Formosan Resolution,early,usa,remove,2
+defect,Defectors,early,usa,discard,2
 cambridge,The Cambridge Five,early,ussr,discard,2
-sprel,Special Relationship,early,us,discard,2
-norad,NORAD,early,us,remove,3
+sprel,Special Relationship,early,usa,discard,2
+norad,NORAD,early,usa,remove,3
 brush,Brush War,mid,neutral,discard,3
 casco,Central America Scoring,mid,scoring,discard,0
 seasco,South East Asia Scoring,mid,scoring,remove,0
 arms,Arms Race,mid,neutral,discard,3
 cuban,Cuban Missile Crisis,mid,neutral,remove,3
-subs,Nuclear Subs,mid,us,remove,2
+subs,Nuclear Subs,mid,usa,remove,2
 quag,Quagmire,mid,ussr,remove,3
 salt,SALT Negotiations,mid,neutral,remove,3
-bear,Bear Trap,mid,us,remove,3
+bear,Bear Trap,mid,usa,remove,3
 summit,Summit,mid,neutral,discard,1
 how,How I Learned to Stop Worrying,mid,neutral,discard,2
 junta,Junta,mid,neutral,discard,2
-kitchen,Kitchen Debates,mid,us,remove,1
+kitchen,Kitchen Debates,mid,usa,remove,1
 envy,Missile Envy,mid,neutral,discard,2
 bury,We Will Bury You,mid,ussr,remove,4
 brez,Brezhnev Doctrine,mid,ussr,remove,3
@@ -65,47 +64,47 @@ flower,Flower Power,mid,ussr,remove,4
 u2,U2 Incident,mid,ussr,remove,3
 opec,OPEC,mid,ussr,discard,3
 lone,Lone Gunman,mid,ussr,remove,1
-rearguards,Colonial Rear Guards,mid,us,discard,2
-canal,Panama Canal Returned,mid,us,remove,1
-camp,Camp David Accords,mid,us,remove,2
-puppet,Puppet Governments,mid,us,remove,2
-grain,Grain Sales to Soviets,mid,us,discard,2
-jp,John Paul II Elected Pope,mid,us,remove,2
+rearguards,Colonial Rear Guards,mid,usa,discard,2
+canal,Panama Canal Returned,mid,usa,remove,1
+camp,Camp David Accords,mid,usa,remove,2
+puppet,Puppet Governments,mid,usa,remove,2
+grain,Grain Sales to Soviets,mid,usa,discard,2
+jp,John Paul II Elected Pope,mid,usa,remove,2
 lads,Latin American Death Squads,mid,neutral,discard,2
-oas,OAS Founded,mid,us,remove,1
-nixon,Nixon Plays the China Card,mid,us,remove,2
-sadat,Sadat Expels the Soviets,mid,us,remove,1
-shuttle,Shuttle Diplomacy,mid,us,board,3
-voice,The Voice of America,mid,us,discard,2
+oas,OAS Founded,mid,usa,remove,1
+nixon,Nixon Plays the China Card,mid,usa,remove,2
+sadat,Sadat Expels the Soviets,mid,usa,remove,1
+shuttle,Shuttle Diplomacy,mid,usa,board,3
+voice,The Voice of America,mid,usa,discard,2
 theo,Liberation Theology,mid,ussr,discard,2
-ussuri,Ussuri River Skirmish,mid,us,remove,3
-asknot,Ask Not What Your Country,mid,us,remove,3
-afp,Alliance for Progress,mid,us,remove,3
+ussuri,Ussuri River Skirmish,mid,usa,remove,3
+asknot,Ask Not What Your Country,mid,usa,remove,3
+afp,Alliance for Progress,mid,usa,remove,3
 afsco,Africa Scoring,mid,scoring,discard,0
 step,One Small Step,mid,neutral,discard,2
 sasco,South America Scoring,mid,scoring,discard,0
 che,Che,mid,ussr,discard,3
-ourman,Our Man in Tehran,mid,us,discard,2
+ourman,Our Man in Tehran,mid,usa,discard,2
 hostage,Iranian Hostage Crisis,late,ussr,remove,3
-ironlady,The Iron Lady,late,us,remove,3
-reagan,Reagan Bombs Libya,late,us,remove,2
-starwars,Star Wars,late,us,remove,2
-northsea,North Sea Oil,late,us,remove,3
+ironlady,The Iron Lady,late,usa,remove,3
+reagan,Reagan Bombs Libya,late,usa,remove,2
+starwars,Star Wars,late,usa,remove,2
+northsea,North Sea Oil,late,usa,remove,3
 reformer,The Reformer,late,ussr,remove,3
 marine,Marine Barracks Bombing,late,ussr,remove,2
-kal,Soviets Shoot Down KAL-007,late,us,remove,4
+kal,Soviets Shoot Down KAL-007,late,usa,remove,4
 glasnost,Glasnost,late,ussr,remove,4
 ortega,Ortega Elected in Nicaragua,late,ussr,remove,2
 terror,Terrorism,late,neutral,discard,2
 contra,Iran-Contra Scandal,late,ussr,remove,2
-chernobyl,Chernobyl,late,us,remove,3
+chernobyl,Chernobyl,late,usa,remove,3
 debt,Latin American Debt Crisis,late,ussr,discard,2
-tear,Tear Down this Wall,late,us,remove,3
-evil,An Evil Empire,late,us,remove,3
+tear,Tear Down this Wall,late,usa,remove,3
+evil,An Evil Empire,late,usa,remove,3
 ames,Aldrich Ames Remix,late,ussr,remove,3
 pershing,Pershing II Deployed,late,ussr,remove,3
 wargames,Wargames,late,neutral,remove,4
-solidarity,Solidarity,late,us,remove,2
+solidarity,Solidarity,late,usa,remove,2
 iiwar,Iran-Iraq War,late,neutral,remove,2
 yuri,Yuri and Samantha,late,ussr,remove,2
-awacs,AWACS Sales to Saudis,late,us,remove,3
+awacs,AWACS Sales to Saudis,late,usa,remove,3
