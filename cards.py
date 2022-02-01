@@ -28,6 +28,12 @@ class Cards:
             if card.location == location
         }
 
+    def setup(self):
+        for short, card in self.cards.items():
+            if card.stage == "early":
+                self.move(short, "deck")
+            self.move("china", "ussr")
+
 
 # -- Tests --
 def test_card():
@@ -58,3 +64,9 @@ def test_cards_in():
     cards.move("nasser", "ussr")
     assert len(cards.cards_in("box")) == 109
     assert len(cards.cards_in("ussr")) == 1
+
+
+def test_setup():
+    cards = Cards()
+    cards.setup()
+    assert len(cards.cards_in("deck")) == 38
