@@ -8,6 +8,11 @@ class Game:
         self.ussr_name = ussr_name
         self.usa_name = usa_name
         self.bid = bid
+        self.status = "Open"
+        self.score = 0
+        self.defcon = 5
+        self.ussr_space_race = 0
+        self.usa_space_race = 0
         self.cards = Cards()
         self.cards.setup()
 
@@ -19,11 +24,11 @@ class Game:
             gamefile.write(f"USA: {self.usa_name}\n")
             gamefile.write(f"Bid: {self.bid}\n")
             gamefile.write("-" * 80 + "\n")
-            gamefile.write("Status: Open\n")
-            gamefile.write("VPs: 0\n")
-            gamefile.write("DEFCON: 5\n")
-            gamefile.write("USSR Space Race: 0\n")
-            gamefile.write("USA  Space Race: 0\n")
+            gamefile.write(f"Status: {self.status}\n")
+            gamefile.write(f"VPs: {self.score}\n")
+            gamefile.write(f"DEFCON: {self.defcon}\n")
+            gamefile.write(f"USSR Space Race: {self.ussr_space_race}\n")
+            gamefile.write(f"USA  Space Race: {self.usa_space_race}\n")
             gamefile.write("-" * 80 + "\n")
             gamefile.write("# Cards\n")
             gamefile.write("\n## USSR\n")
