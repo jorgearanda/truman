@@ -24,7 +24,7 @@ def cli():
 def create(name, ussr, usa, bid, test):
     """Create a new game."""
     loc = "games" if not test else "test_output"
-    game = Game(name, datetime.now(), ussr, usa, bid)
+    game = Game().new(name, datetime.now(), ussr, usa, bid)
     path = f"{loc}/{name}.tws"
     game.to_file(path)
     console = Console(highlight=False)

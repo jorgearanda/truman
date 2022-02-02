@@ -2,7 +2,7 @@ from cards import Cards
 
 
 class Game:
-    def __init__(self, name, created, ussr_name, usa_name, bid):
+    def new(self, name, created, ussr_name, usa_name, bid):
         self.name = name
         self.created = created
         self.ussr_name = ussr_name
@@ -15,6 +15,7 @@ class Game:
         self.usa_space_race = 0
         self.cards = Cards()
         self.cards.setup()
+        return self
 
     def to_file(self, path):
         with open(path, "w") as gamefile:
