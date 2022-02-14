@@ -31,6 +31,20 @@ def create(name, ussr, usa, bid, test):
     console.print(f"✨ [bold yellow]{name}[/] created in {path} ✨")
 
 
+@cli.command()
+@click.argument("name")
+@click.argument("dest")
+@click.argument("cards", nargs=-1)
+def mv(name, dest, cards):
+    """Move cards to target location."""
+    console = Console(highlight=False)
+    game = Game().from_file(name)
+    for card in cards:
+        game.cards.move(card, dest)
+        console.print(f"[bold yellow]{name}[/]: {card} -> {dest}")
+    game.to_file(name)
+
+
 if __name__ == "__main__":
     cli()
 
@@ -42,3 +56,11 @@ def test_create():
     result = runner.invoke(cli, ["create", name, "me", "bot", "2", "--test"])
     assert result.exit_code == 0
     assert f"{name} created" in result.output
+
+
+def test_mv():
+    name = "test_output/test-12345.tws"
+    runner = CliRunner()
+    result = runner.invoke(cli, ["mv", name, "ussr", "nasser"])
+    assert result.exit_code == 0
+    assert "nasser -> ussr" in result.output

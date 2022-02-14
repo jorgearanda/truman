@@ -18,8 +18,16 @@ class Cards:
                 card = Card(line)
                 self.cards[card.short] = card
 
-    def move(self, short, dest):
-        self.cards[short].location = dest
+    def move(self, name, dest):
+        if name in self.cards.keys():
+            self.cards[name].location = dest
+        elif name in {"ussr", "usa", "deck", "discard", "board", "removed", "box"}:
+            for card in self.cards_in(name).keys():
+                self.move(card, dest)
+        elif name in {"early", "mid", "late"}:
+            for card in self.cards.values():
+                if card.stage == name:
+                    self.move(card.short, dest)
 
     def cards_in(self, location):
         return {
@@ -56,6 +64,19 @@ def test_card_move():
     cards = Cards()
     cards.move("nasser", "ussr")
     assert cards.cards["nasser"].location == "ussr"
+
+
+def test_card_move_from_location():
+    cards = Cards()
+    cards.setup()
+    cards.move("deck", "discard")
+    assert cards.cards["truman"].location == "discard"
+
+
+def test_card_move_stage():
+    cards = Cards()
+    cards.move("mid", "deck")
+    assert cards.cards["ussuri"].location == "deck"
 
 
 def test_cards_in():
